@@ -1,0 +1,11 @@
+matplotlib
+torch==2.7.0
+torchvision==0.22.0
+#pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+tqdm
+pandas
+scikit-learn
+click
+pytest
+pytest-mock
+numpy==1.26.4

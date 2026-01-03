@@ -1,0 +1,19 @@
+glass
+glass, wine_bottle
+metal
+metal, aluminum_can
+metal, aluminum_foil
+metal, steel_can
+paper
+paper, corrugated_cardboard
+paper, egg_carton
+paper, paperboard
+paper, paper_cup
+paper, paper_towel
+plastic
+plastic, bottle
+plastic, film
+mixed, tetra_pak
+waste
+compost
+miscellaneous, background

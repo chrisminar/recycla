@@ -1,0 +1,265 @@
+version: 1.009
+materials:
+  Glass:
+    Generic:
+      examples:
+        - broken glass
+      used: True
+      recycle groups: {}
+    Bottle:
+      examples:
+        - beer bottle
+      used: True
+      recycle groups: {Glass bottles & jars: 1}
+    Container:
+      examples:
+        - jar of jam
+      used: False
+      recycle groups: {Glass bottles & jars: 1}
+    Wine Bottle:
+      examples:
+        - wine bottle
+      used: True
+      recycle groups: {Glass bottles & jars: 1}
+  Metal:
+    Generic:
+      examples:
+        - metal hanger
+      used: True
+      recycle groups: {Aluminum trays: 1, teel/tin/bimetal cans: 1}
+    Aluminum Aerosol:
+      examples:
+        - spray paint can
+      used: False
+      note: all aerosol cans will be considered aluminum for now
+      recycle groups: {Aluminum aerosol containers: 2}
+    Aluminum Can:
+      examples:
+        - soda can
+      used: True
+      recycle groups: {Aluminum cans: 1}
+    Aluminum Foil:
+      examples:
+        - aluminum foil sheet
+      used: True
+      recycle groups: {Aluminum foil: 2}
+    Lid:
+     examples:
+       - jar lid
+     used: False
+     recycle groups: {Steel/tin/bimetal cans: 1}
+    Steel Aerosol:
+      examples:
+        - spray paint can
+      used: False
+      recycle groups: {Steel aerosol containers: 2}
+    Steel Can:
+      examples:
+        - soup can
+        - tuna can
+        - can of beans
+      used: False
+      recycle groups: {Steel/tin/bimetal cans: 1}
+  Paper:
+    Generic:
+      examples:
+        - paper
+      used: True
+      recycle groups: {Nonmetalized wrapping paper: 2, Newspaper: 1, Magazines: 1, Mail/office paper: 1}
+    Corrugated Cardboard:
+      examples:
+        - shipping box
+      used: True
+      recycle groups: {Corrugated cardboard: 1}
+    Egg Carton:
+      examples:
+        - Egg carton
+      used: True
+      recycle groups: {Paperboard: 1}
+    Magazine:
+     examples:
+       - fashion magazine
+     used: False
+     recycle groups: {Magazines: 1}
+    Mail:
+      examples:
+        - envelopes
+        - junk mail
+      used: False
+      recycle groups: {Mail/office paper: 1}
+    Newspaper:
+     examples:
+       - daily newspaper
+     used: False
+     recycle groups: {Newspaper: 1}
+    Office Paper:
+     examples:
+       - printer paper
+     used: False
+     recycle groups: {Mail/office paper: 1}
+    Paperback Book:
+      examples:
+        - novel
+      used: False
+      recycle groups: {Paperback books: 2}
+    Paperboard:
+      examples:
+        - cereal box
+      used: True
+      alias:
+        - cardstock
+      recycle groups: {Paperboard: 1, Polycoated paperboard: 2}
+    Paper Bag:
+      examples:
+        - paper grocery bag
+      used: False
+      recycle groups: {Paper bags: 2}
+    Paper Cup:
+      examples:
+        - coffee cup
+      used: True
+      recycle groups: {Paper hot cups: 2}
+    Paper Towel:
+      examples:
+        - kitchen towel
+      used: True
+      recycle groups: {Waste: 4}
+    Pizza Box:
+      examples:
+        - pizza delivery box
+      used: False
+      recycle groups: {Pizza boxes: 2, Waste: 4}
+    Shredded Paper:
+      examples:
+        - shredded documents
+      used: False
+      recycle groups: {Shredded paper: 2}
+  Plastic:
+    Generic:
+      examples:
+        - plastic
+      used: True
+      recycle groups:
+        LDPE tubs/cups: 2
+        LDPE lids: 2
+        PET lids: 2
+        PET cups: 2
+        PET thermoforms: 2 
+        HDPE cups: 2
+        HDPE lids: 2
+        HDPE trays: 2
+        HDPE tubes: 3
+        HDPE bulky rigid plastics: 2
+        PP cups: 2
+        PP lids: 2
+        PP trays: 2
+        PP bulky rigid plastics: 2
+        PP clamshells: 2
+        PP pods: 3
+        PP tubes: 3
+        Plastic buckets (≥ 3 gal): 2
+        Nursery (plant) packaging: 2
+        PS lids: 3
+    Bag:
+      examples:
+        - grocery bag
+      used: False
+      recycle groups: {Monomaterial PE bags and film: 3}
+    Bottle:
+      examples:
+        - water bottle
+      used: True
+      recycle groups: {PET bottles/jugs: 1, HDPE bottles/jugs & jars: 1, LDPE bottles/jugs & jars: 2, PP bottles/jugs & jars: 2}
+    Clamshell:
+     examples:
+       - salad container
+     used: False
+     recycle groups: {PP clamshells: 2, PET thermoforms: 2}
+    Cup:
+     examples:
+       - yogurt cup
+       - red solo cup
+     used: False
+     recycle groups: {PET cups: 2, HDPE cups: 2, LDPE tubs/cups: 2, PP cups: 2}
+    Lid:
+     examples:
+       - bottle cap
+     used: False
+     recycle groups: {PET lids: 2, HDPE lids: 2, LDPE lids: 2, PP lids: 2, PS lids: 3}
+    Packaging:
+      examples:
+        - plastic wrap
+      used: True
+      alias:
+        - plastic film
+        - plastic wrap
+        - plastic waste
+      recycle groups: {Monomaterial PE bags and film: 3, Other plastic packaging: 3, PS foodservice packaging: 3, EPS foodservice packaging: 3, EPS packaging: 3, PVC packaging: 3, Multimaterial flexible packaging: 3, Molded fiber foodservice packaging: 3, Molded fiber nonfood packaging and trays: 3}
+    Tub:
+      examples:
+        - margarine tub
+      used: False
+      recycle groups: {HDPE tubs: 2, PP tubs: 2}
+    Utensil:
+      examples:
+        - plastic fork
+      used: False
+      recycle groups: {PET thermoforms: 2}
+  Mixed:
+    Spiral Wound:
+      examples:
+        - chip canister
+      used: False
+      recycle groups: {Spiral wound containers: 3}
+    Tetra Pak:
+      examples:
+        - juice box
+      used: True
+      alias:
+        - aseptic gable top carton
+        - carton
+        - milk carton
+      recycle groups: {Aseptic/gable-top cartons: 2}
+  Waste:
+    Generic:
+      examples:
+        - non-recyclable waste
+      used: True
+      recycle groups: {Waste: 4}
+    Styrofoam:
+      examples:
+        - foam packaging
+      used: False
+      recycle groups: {Waste: 4}
+  Compost:
+    Generic:
+      examples:
+        - apple core
+      used: True
+      recycle groups: {Waste: 4}
+  Miscellaneous:
+    Generic:
+      examples:
+        - catch all for items that don't fit elsewhere
+      used: False
+      recycle groups: {Other: 5}
+    Background:
+      examples:
+        - false positive from shadow
+      used: True
+      recycle groups: {Other: 5}
+    Test:
+      examples:
+        - for testing 
+      used: False
+      recycle groups: {Other: 5}
+
+unused recycling categories:
+  - Paper ice cream containers
+
+recycle groups:
+  1: "Recyclable in most places."
+  2: "Sometimes Recyclable"
+  3: "Rarely Recyclable"
+  4: "Not Recyclable"
+  5: "N/A"

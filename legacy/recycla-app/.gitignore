@@ -1,0 +1,16 @@
+# temporary
+assets
+# not temporary
+Pods
+recycla.xcworkspace
+recycla.xcodeproj
+ # this are needed to work but have secrets
+recycla/Info.plist
+recycla/GoogleService-Info.plist
+recycla/Preview\ Content
+recycla/Assets.xcassets
+.DS_Store
+.Trashes
+*.swp
+*.lock
+.builds

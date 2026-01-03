@@ -1,0 +1,35 @@
+glass
+glass, bottle
+glass, container
+glass, wine_bottle
+metal
+metal, aluminum_aerosol
+metal, aluminum_can
+metal, aluminum_foil
+metal, steel_aerosol
+metal, steel_can
+paper
+paper, corrugated_cardboard
+paper, egg_carton
+paper, mail
+paper, paperback_book
+paper, paperboard
+paper, paper_bag
+paper, paper_cup
+paper, paper_towel
+paper, pizza_box
+paper, shredded_paper
+plastic
+plastic, bag
+plastic, bottle
+plastic, packaging
+plastic, tub
+plastic, utensil
+mixed, spiral_wound
+mixed, tetra_pak
+waste
+waste, styrofoam
+compost
+miscellaneous
+miscellaneous, background
+miscellaneous, test

@@ -1,0 +1,13 @@
+firebase_functions>=0.1.8
+firebase-admin
+torch==2.7.1
+torchvision
+opencv-python-headless
+numpy==1.26.4
+google-cloud-storage
+PyYAML
+scikit-learn
+av
+click
+google-cloud-vision
+google-genai

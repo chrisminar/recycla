@@ -1,0 +1,96 @@
+# https://recyclingpartnership.org/wp-content/uploads/dlm_uploads/2024/09/Recycling-Partnership-Taxonomy.pdf
+# table 2 from the pdf turned into a yaml file
+# this is probably not parsable, just a reference
+material guideline category:
+  - plastic bottle (jugs and jars):
+    recycling categories:
+      - PET bottles, jugs & jars
+      - HDPE bottles, jugs & jars
+      - LDPE bottles, jugs & jars
+      - PP bottles, jugs & jars
+    material_guideline_category: []
+  - plastic 1&2 bottles (jugs and jars):
+    recycling categories:
+      - PET bottles, jugs & jars
+      - HDPE bottles, jugs & jars
+    material_guideline_category: []
+  - plastic 1&2 bottles & containers:
+      - PET:
+        - clamshells
+        - cups
+        - tubs
+        - trays
+        - lids
+      - HDPE:
+        - clamshells
+        - cups
+        - tubs
+        - trays
+        - lids
+    material_guideline_category:
+      - plastic 1&2 bottles (jugs and jars)
+  - plastic bottles and containers:
+    - LDPE:
+      - clamshells
+      - cups
+      - tubs
+      - trays
+      - lids
+    - PP:
+      - clamshells
+      - cups
+      - tubs
+      - trays
+      - lids
+    material_guideline_category:
+      - plastic 1&2 bottles & containers
+  - plastic tubs:
+    - PET:
+      - tubs
+      - cups
+    - HDPE:
+      - tubs
+      - cups
+    - LDPE:
+      - tubs
+      - cups
+    - PP:
+      - tubs
+      - cups
+    material_guideline_category: []
+  - plastic clamshells:
+    - PET:
+      - thermoforms
+    - PP:
+      - clamshells
+      - trays
+    material_guideline_category: []
+  - plastics 1-7:
+      material_guideline_category:
+      - plastic bottles and containers
+      - plastic tubs
+      - plastic clamshells
+  - bulky rigid plastics:
+    - HDPE bulky rigid plastics
+    - PP bulky rigid plastics
+    material_guideline_category: []
+  - mixed paper:
+    - magazines
+    - mail
+    - molded fiber
+    - newspaper
+    - office paper
+    - paperback books
+    - paperboard
+    - phone books
+  - cardboard:
+    - corrugated cardboard
+    - pizza boxes
+    - paper bags
+  - metal cans:
+    - aluminum cans
+    - steel cans
+    - tin cans
+  - glass bottles and jars:
+    - glass bottles
+    - glass jars
