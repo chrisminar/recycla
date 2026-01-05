@@ -1,6 +1,6 @@
 # Recycla
 
-Demo website [Recycla](https://recycla-demo.web.app/)
+Demo website [Recycla](https://recycla-demo.web.app/)   
 Dataset [Kaggle](https://www.kaggle.com/datasets/chrisminar/recycla)
 
 ## Setup
