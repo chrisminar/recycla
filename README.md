@@ -1,5 +1,8 @@
 # Recycla
 
+Demo website [Recycla](https://recycla-demo.web.app/)
+Dataset [Kaggle](https://www.kaggle.com/datasets/chrisminar/recycla)
+
 ## Setup
 ```bash
 cd <source directory>
@@ -23,28 +26,33 @@ pytest
 
 ## Basic Training
 
-1. Download data from X TODO
-2. Rename data X TODO
-3. Generate labeled data
+1. Download zipped data from [Kaggle](https://www.kaggle.com/datasets/chrisminar/recycla)
+2. Create data directory in recycla repository directory
+3. Extract archive such that the data structure looks like this
+  - data
+    - raw_labeled_data
+      - 1970-01-01_2025-03-19
+      - ...
+4. Generate labeled data
    ```bash
    recycla parse-data
    ```
-4. Train (recommended to set up CUDA before training)
+5. Train (recommended to set up CUDA before training)
    ```bash
    recycla train --model-type mobilenet_v2 --freeze-backbone --unfreeze-last-n-blocks 2 --nepochs 3
    ```
 
    Freezing all but the last 2 blocks will dramatically improve training speed. I typically saw this lose accuracy.
-   The output will be under `.models/best_candidate.pth`
+   At the end of each epoch, the best model will be saved at `.models/best_candidate.pth`
    ```bash
    mv .models/best_candidate.pth .models/best_mobilenetv2.pth
    ```
-5. Evaluate
+6. Evaluate
    ```bash
    recycla test image --model-path .models/best_mobilenetv2.pth --save-path .results/mobilenet
    ```
-6. Train a different model
-7. Compare
+7. Train a different model
+8. Compare
    ```bash
    recycla test image --model-path .models/best_mobilenetv2_experiment2.pth --save-path .results/mobilenet_experiment2
    recycla compare .results/mobilenet .results/mobilenet_experiment2
